@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raffle</title>
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Belanosima&family=Ubuntu+Condensed&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="../images/icon.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="../images/logo.png" alt="imagen-logo" width="100px">
+            <ul>
+              <li>
+                <a href="../../index.html">Home</a>
+                <a href="../pages/about-us.html">About us</a>
+                <a href="../pages/contact-us.html">Contact us</a>
+                <a href="../pages/more-information.html">More Information</a>
+                <a href="../pages/benefits&tips.html">Benefits and tips</a>
+                <a href="#">Raffle</a>
+              </li>
+            </ul>
+
+        </nav>
+    </header>
+<main>
+    <div id="titles">
+        <h1>Raffle</h1>
+        <h3>You can collaborate so that we expand the business and by doing so you will be participating in the raffle for a box of traditional ice creams</h3>
+    </div>
+    <section id="section-raffle">
+        <div class="div-map">
+            <h4>Our location is located at:</h4>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d423286.88299994566!2d-118.74139846093641!3d34.02003919738565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c75ddc27da13%3A0xe22fdf6f254608f4!2sLos%20%C3%81ngeles%2C%20California%2C%20EE.%20UU.!5e0!3m2!1ses-419!2sar!4v1689795595364!5m2!1ses-419!2sar" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <div class="div-form">
+            <form   action="../../show_data.html" method="get" target="_blank">
+                <fieldset class="form">
+
+                <label for="name">First Name</label><br>
+                <input class="inputs" type="text" id="name" name="name" placeholder="Peter"><br>
+
+                <label for="last-name">Last name</label><br>
+                <input class="inputs" type="text" id="last-name" name="last-name" placeholder="Parker"><br>
+
+                <label for="meet-or-zoom">Choose Meet or Zoom</label><br>
+                <select id="choose" name="option">
+                    <option value=" ">--Choose--</option>
+                    <option value="meet">Meet</option>
+                    <option value="zoom">Zoom</option>
+                </select> <br>
+
+                <label for="date">Choose Date</label><br>
+                <input type="date" id="date" name="date" value="date"><br>
+
+                <label for="payment">Payment Options</label><br>
+                <label class="pay-options" for="cash">Cash</label>
+                <input type="radio" id="cash" name="payment" value="cash"><br>
+                <label class="pay-options" for="credit-card">Credit Card</label>
+                <input type="radio" id="credit-card" name="payment" value="credit-card"><br>
+                <label class="pay-options" for="debit-card">Debit Card</label>
+                <input type="radio" id="debit-card" name="payment" value="debit-card"><br>
+
+                <label for="message">Message (Optional)</label><br>
+                <input class="inputs" type="text" name="message" id="message" placeholder="Type a message"><br>
+
+                <input type="checkbox" name="accept-terms" id="accept-terms" value="Yes">
+                <label for="accept-terms">I accept terms and conditions</label>
+               
+                <input type="submit" name="send" id="send" value="Send">
+
+
+            </fieldset>
+            </form>
+        </div>       
+    </section>
+</main>
+
+    <footer>
+        <p>Creted by: Enzo Espinola</p>
+    </footer>
+</body>
+</html>
